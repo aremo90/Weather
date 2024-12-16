@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Weather</title>
+  <link rel="shortcut icon" href="Images/facicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg py-4 navbar-dark">
+    <div class="container">
+      <a class="navbar-brand text-uppercase h1 logo w-25" href="#home">
+        <img src="Images/logo.png" class="img-logo d-none d-md-inline-block" alt="" />
+        Weather
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+          <li class="nav-item">
+            <a class="nav-link active underline fs-6" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active underline fs-6" aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item" id="accountLogIn">
+            <a class="nav-link active underline fs-6 account" aria-current="page" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item" id="accountSignUp">
+            <a class="nav-link active underline fs-6 account" aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item" id="accountSignUp">
+            <a class="nav-link active underline fs-6 account" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="header vh-100">
+    <div class="container">
+      <div class="upper">
+        <div class="inputs d-flex justify-content-center">
+          <input type="text" class="form-control" name="search" id="search" placeholder="Find your location" />
+          <button id="findBtn" class="btn btn-primary">Find</button>
+        </div>
+      </div>
+
+      <div class="middle-section">
+        <div class="card-group mt-5">
+          <div class="card card-0 text-center">
+            <div>
+              <p class="d-flex justify-content-between p-2">
+                <span id="currentDay"></span>
+                <span id="currentDate"></span>
+              </p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title fs-6 mb-3" id="location"></h5>
+              <div class="degreee m-3">
+                <div class="num display-1 fw-bold" id="todayTemp"></div>
+                <div id="todayStatusImg"></div>
+              </div>
+              <div class="text-primary m-3" id="todayStatus"></div>
+              <div class="d-flex justify-content-start gap-4">
+                <span class="d-flex gap-2"><img src="Images/icon-umberella.png" alt="test" />20%</span>
+                <span class="d-flex gap-2"><img src="Images/icon-wind.png" alt="test" />18km/h</span>
+                <span class="d-flex gap-2"><img src="Images/icon-compass.png" alt="test" />East</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="weather"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="site-footer py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-7"><input type="text" placeholder="Enter your email to subscribe..." class="form-control"></div>
+            <div class="col-md-3"><button class="btn btn-primary">Subscribe</button></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

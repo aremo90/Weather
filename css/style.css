@@ -1,0 +1,48 @@
+/*! Start Global style */
+body{
+  background-color: #1E202B;
+}
+
+
+
+
+
+
+
+
+
+
+/*! Start Nav Style */
+
+
+
+
+
+/*  */
+.header{
+  background-image: url(../Images/banner.png);
+  background-position: center;
+  background-size:cover ;
+  height: 40vh;
+}
+
+.upper .inputs{
+  padding-top: 100px;
+  padding-inline: 70px;
+}
+
+
+
+
+.card{
+  background-color: #1E202B;
+  color: #ffffff;
+}
+
+.card-1 , .card-2{
+  background-color: #303344;
+}
+
+
+
+
